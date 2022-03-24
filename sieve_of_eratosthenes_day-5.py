@@ -4,7 +4,7 @@ def remov(prime):
         if(bool(i)):
             l.append(i)
     return len(l)
-def is_prime(n):
+def sieve(n):
     prime = [True for i in range(n + 1)]
     p = 2
     while(p*p<=n):
@@ -18,4 +18,4 @@ def is_prime(n):
 t=int(input())
 for k in range(0,t):
     n=int(input())
-    print(is_prime(n))
+    print(sieve(n))
